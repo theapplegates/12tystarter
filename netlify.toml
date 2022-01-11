@@ -4,3 +4,8 @@
 [build]
   command = "npm run build"
   publish = "dist"
+
+[[redirects]]
+from = "/responsive/:width/*"
+to = "https://res.cloudinary.com/paulportfolio/image/fetch/q_auto,f_auto,w_:width,c_limit/https://epic-wescoff-b9554c.netlify.app/:splat"
+status = 200
